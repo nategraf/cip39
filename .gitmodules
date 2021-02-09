@@ -1,0 +1,6 @@
+[submodule "reedsolomon"]
+	path = reedsolomon
+	url = git@github.com:tomerfiliba/reedsolomon.git
+[submodule "python-mnemonic"]
+	path = mnemonic
+	url = git@github.com:trezor/python-mnemonic.git
