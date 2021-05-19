@@ -43,6 +43,13 @@ def mnemonic_to_symbols(phrase, mnemonic):
     return symbols
 
 def generate(n, k=3, mnemonic=Mnemonic("english")):
+    """generate a mnemonic phrase with the specified level of error correction
+
+    Arguments:
+        n (int): Total number of words in the phrase.
+        k (int): Number of words devoted to error correction.
+        mnemonic (Mnemonic): Istance of Mnemonic to use.
+    """
     ok, error = validate_n_k(n, k)
     if not ok:
         raise ValueError(error)
